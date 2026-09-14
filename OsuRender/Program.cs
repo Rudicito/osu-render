@@ -1,7 +1,6 @@
 ﻿using CommandLine;
 using osu.Framework;
 using osu.Framework.Platform;
-using osu.Game;
 
 namespace OsuRender
 {
@@ -39,5 +38,11 @@ namespace OsuRender
 
         [Option("disable-audio", Default = false, Required = false, HelpText = "Disable audio.")]
         public bool DisableAudio { get; set; }
+
+        [Option("disable-intro", Default = false, Required = false, HelpText = "Disable the intro screen.")]
+        public bool DisableIntro { get; set; }
+
+        [Option("disable-results", Default = false, Required = false, HelpText = "Disable the results screen.")]
+        public bool DisableResults { get; set; }
     }
 }
