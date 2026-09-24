@@ -11,7 +11,7 @@ namespace OsuRender.Player
     public partial class RenderPlayerLoader : PlayerLoader
     {
         [Resolved]
-        private RecordManager recordManager { get; init; } = null!;
+        private RecordManager recordManager { get; set; } = null!;
 
         public readonly ScoreInfo Score;
 

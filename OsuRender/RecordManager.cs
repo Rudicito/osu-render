@@ -11,10 +11,10 @@ namespace OsuRender
     public partial class RecordManager : Component
     {
         [Resolved]
-        private GameHost host { get; init; } = null!;
+        private GameHost host { get; set; } = null!;
 
         [Resolved]
-        private Options options { get; init; } = null!;
+        private Options options { get; set; } = null!;
 
         public bool SkipIntro => options.DisableIntro;
 
