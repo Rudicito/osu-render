@@ -10,7 +10,7 @@ namespace OsuRender.Player
     public partial class RenderResultScreen : SoloResultsScreen
     {
         [Resolved]
-        private RecordManager recordManager { get; init; } = null!;
+        private RecordManager recordManager { get; set; } = null!;
 
         private const double open_panel_delay = 2500;
         private const double quit_delay = open_panel_delay + 4000;
